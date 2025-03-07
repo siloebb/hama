@@ -1,16 +1,35 @@
-# hama
+# HAMA
 
-Home Asset Management App.
+HAMA (Home Asset Management App)
 
-## Getting Started
+This is an app that  allow users to create and manage homes along with their key assets—essential systems and equipment that impact a home’s functionality, efficiency, and value.
 
-This project is a starting point for a Flutter application.
+You can access a web version [HERE]()
 
-A few resources to get you started if this is your first Flutter project:
+## Details
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This app was made using Flutter to work in these platforms:
+* Android
+* iOS
+* Web
+* MacOS
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## To Run
+
+SDK:
+- Flutter: 3.29.0
+- Dart: 3.7.0
+
+### Manually
+
+You can just use `flutter run` or `flutter run -d <platform>` than the app will build and run the debug version in your device.
+
+## Design
+
+The app use the principles of Clean Arquitecture, spliting the layers of the developed code, the main layers are Data, Domain and Presenter, this was choosed to prioritize the maintainability and testability of the app, making it more scalable.
+
+For the presentation layer was choosed MVVM, using Cubit as State Management, using it we can have less coupling between the business logic and the UI.
+
+The [Core Folder](lib/src/core) has the main business logic of the system, how the UseCases that hold behavior of the logic of the app, in this folder there is the system_design widgets and tokens to be used allover the app.
+
+In the [Features Folder](lib/src/features) there is the pages and some features the app.

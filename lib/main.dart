@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hama/src/data/repositories/home_repository_impl.dart';
-import 'package:hama/src/domain/repositories/home_repository.dart';
-import 'package:hama/src/presentation/pages/home_list_page.dart';
-import 'package:hama/src/presentation/presenters/home_list/home_list_cubit.dart';
+import 'package:hama/src/core/domain/repositories/home_repository.dart';
+import 'package:hama/src/di/providers.dart';
+import 'package:hama/src/features/home_list/home_list_page.dart';
+import 'package:hama/src/features/home_list/cubit/home_list_cubit.dart';
 
 void main() {
   runApp(
     MultiRepositoryProvider(
-      providers: [
-        RepositoryProvider<HomeRepository>(
-          create: (context) => HomeRepositoryImpl(),
-        ),
-      ],
+      providers: Injections.instance.repositoryProviders,
       child: MultiBlocProvider(
         providers: [
           BlocProvider<HomeListCubit>(
@@ -36,9 +32,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'HAMA',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-      home: const HomeList(),
+      // routes: {
+      //   '/': (context) => const HomeListPage(),
+      //   '/home/edit': (context) => const HomeEditPage(),
+      // },
+      home: const HomeListPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

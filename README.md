@@ -4,7 +4,7 @@ HAMA (Home Asset Management App)
 
 This is an app that  allow users to create and manage homes along with their key assets—essential systems and equipment that impact a home’s functionality, efficiency, and value.
 
-You can access a web version [HERE]()
+You can access a web version [HERE](https://hama-35a8a.web.app/)
 
 ## Details
 

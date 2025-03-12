@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000213">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: cd ../.. &amp;&amp; flutter pub get" time="1.893524">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: cd ../.. &amp;&amp; flutter analyze" time="3.276044">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: cd ../.. &amp;&amp; flutter test --machine --coverage &gt; tests.output" time="4.894816">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: git rev-list --count HEAD" time="0.024974">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: assembleRelease" time="10.57899">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

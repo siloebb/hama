@@ -8,11 +8,10 @@ class HomeForm extends StatefulWidget {
   final void Function(String? id, String name, Address address) onSubmit;
   final Home? home;
 
-  const HomeForm({Key? key, required this.onSubmit, this.home})
-    : super(key: key);
+  const HomeForm({super.key, required this.onSubmit, this.home});
 
   @override
-  _HomeFormState createState() => _HomeFormState();
+  State<HomeForm> createState() => _HomeFormState();
 }
 
 class _HomeFormState extends State<HomeForm> {

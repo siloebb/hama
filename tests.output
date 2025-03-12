@@ -1,0 +1,41 @@
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":78496,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"/Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/get_homes_usecase_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading /Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/get_homes_usecase_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":0}
+{"suite":{"id":2,"platform":"vm","path":"/Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/update_home_usecase_test.dart"},"type":"suite","time":3}
+{"test":{"id":3,"name":"loading /Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/update_home_usecase_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3}
+{"suite":{"id":4,"platform":"vm","path":"/Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/delete_home_usecase_test.dart"},"type":"suite","time":3}
+{"test":{"id":5,"name":"loading /Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/delete_home_usecase_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3}
+{"suite":{"id":6,"platform":"vm","path":"/Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/add_home_usecase_test.dart"},"type":"suite","time":4}
+{"test":{"id":7,"name":"loading /Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/add_home_usecase_test.dart","suiteID":6,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4}
+{"count":4,"time":4,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:54455/ItpPRDLzudc=/","observatoryUri":"http://127.0.0.1:54455/ItpPRDLzudc=/"}}]
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:54453/0bTQtPwl2Qc=/","observatoryUri":"http://127.0.0.1:54453/0bTQtPwl2Qc=/"}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2165}
+{"group":{"id":8,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":2169}
+{"test":{"id":9,"name":"Get Homes UseCase Success","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":11,"column":3,"url":"file:///Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/get_homes_usecase_test.dart"},"type":"testStart","time":2171}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2228}
+{"test":{"id":10,"name":"Get Homes UseCase","suiteID":0,"groupIDs":[8],"metadata":{"skip":false,"skipReason":null},"line":24,"column":3,"url":"file:///Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/get_homes_usecase_test.dart"},"type":"testStart","time":2229}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2234}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:54463/o14oIzUdUkc=/","observatoryUri":"http://127.0.0.1:54463/o14oIzUdUkc=/"}}]
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2351}
+{"group":{"id":11,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":2351}
+{"test":{"id":12,"name":"should call updateHome from HomeRepository","suiteID":2,"groupIDs":[11],"metadata":{"skip":false,"skipReason":null},"line":17,"column":3,"url":"file:///Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/update_home_usecase_test.dart"},"type":"testStart","time":2351}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2396}
+
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:54468/yT6xDXF8Bo4=/","observatoryUri":"http://127.0.0.1:54468/yT6xDXF8Bo4=/"}}]
+{"testID":5,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2715}
+{"group":{"id":13,"suiteID":4,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":2715}
+{"test":{"id":14,"name":"Should call deleteHome with correct values","suiteID":4,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":11,"column":3,"url":"file:///Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/delete_home_usecase_test.dart"},"type":"testStart","time":2715}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2752}
+{"test":{"id":15,"name":"Should throw if deleteHome throws","suiteID":4,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":19,"column":3,"url":"file:///Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/delete_home_usecase_test.dart"},"type":"testStart","time":2753}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2775}
+{"testID":7,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3042}
+{"group":{"id":16,"suiteID":6,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":3042}
+{"test":{"id":17,"name":"Add Home UseCase Success","suiteID":6,"groupIDs":[16],"metadata":{"skip":false,"skipReason":null},"line":26,"column":3,"url":"file:///Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/add_home_usecase_test.dart"},"type":"testStart","time":3042}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3172}
+{"test":{"id":18,"name":"Add Home UseCase","suiteID":6,"groupIDs":[16],"metadata":{"skip":false,"skipReason":null},"line":42,"column":3,"url":"file:///Users/siloebezerrabispo/Developer/flutter/hama/test/src/core/domain/usecases/home/add_home_usecase_test.dart"},"type":"testStart","time":3176}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3180}
+{"success":true,"type":"done","time":3755}

@@ -1,46 +1,102 @@
-# HAMA
+# HAMA - Home Asset Management App
 
-HAMA (Home Asset Management App)
+HAMA é um aplicativo que permite aos usuários criar e gerenciar residências junto com seus principais ativos — sistemas e equipamentos essenciais que impactam a funcionalidade, eficiência e valor de uma casa.
 
-This is an app that  allow users to create and manage homes along with their key assets—essential systems and equipment that impact a home’s functionality, efficiency, and value.
+👉 Acesse a versão web [AQUI](https://hama-35a8a.web.app/)
 
-You can access a web version [HERE](https://hama-35a8a.web.app/)
+---
 
-## Details
+## 📱 Plataformas Suportadas
 
-This app was made using Flutter to work in these platforms:
-* Android
-* iOS
-* Web
-* MacOS
+Desenvolvido com **Flutter**, o HAMA funciona nas seguintes plataformas:
 
-## To Run
+- Android
+- iOS
+- Web
+- MacOS
 
-SDK:
-- Flutter: 3.29.0
-- Dart: 3.7.0
+---
 
-### Manually
+## 🚀 Como Executar o Projeto
 
-You can just use `flutter run` or `flutter run -d <platform>` than the app will build and run the debug version in your device.
+**SDKs Utilizadas:**
 
-To run the tests use `flutter test`
+- Flutter: `3.29.0`
+- Dart: `3.7.0`
 
-## Design
+### Execução Manual
 
-### Architecture
-The app use the principles of Clean Arquitecture, spliting the layers of the developed code, the main layers are Data, Domain and Presenter, this was choosed to prioritize the maintainability and testability of the app, making it more scalable.
+1. Clone o repositório:
+   ```bash
+   git clone <seu-repo>
+   cd hama
+   ```
+2. Execute o aplicativo:
+   ```bash
+   flutter run
+   ```
+   Ou especifique a plataforma:
+   ```bash
+   flutter run -d <platform>
+   ```
 
-For the presentation layer was choosed MVVM, using Cubit as State Management, using it we can have less coupling between the business logic and the UI.
+### Testes Automatizados
+Execute todos os testes com o comando:
+```bash
+flutter test
+```
 
-The [Core Folder](lib/src/core) has the main business logic of the system, how the UseCases that hold behavior of the logic of the app, in this folder there is the system_design widgets and tokens to be used allover the app.
+---
 
-In the [Features Folder](lib/src/features) there is the pages and some features the app.
+## 🏗️ Arquitetura e Design
 
-### System Design
+### Clean Architecture
 
-To make the design more consistent it is been used system design principles, using tokens to keep the colors and typo named and reusable and the same for the components, where it is possible to reuse it.
+O HAMA segue os princípios da **Clean Architecture**, com o código organizado em três camadas principais:
 
-## Tests
+- **Data**
+- **Domain**
+- **Presentation**
 
-The tests is applied for the domain layer to keep the business logic of the app consistent.
+Essa escolha prioriza **manutenibilidade**, **testabilidade** e **escalabilidade** da aplicação.
+
+### MVVM + Cubit
+
+Na camada de apresentação, foi adotado o padrão **MVVM** com **Cubit** para gerenciamento de estado. Essa abordagem minimiza o acoplamento entre a lógica de negócios e a interface de usuário.
+
+### Estrutura de Pastas
+
+- **`lib/src/core`**: Contém a lógica de negócio central, incluindo os **UseCases**, widgets reutilizáveis e tokens de design do sistema.
+- **`lib/src/features`**: Abriga as páginas e funcionalidades específicas da aplicação.
+
+---
+
+## 🎨 System Design
+
+Para garantir consistência visual, o projeto adota princípios de **Design System**, com:
+
+- **Tokens de Cores e Tipografia** nomeados e reutilizáveis.
+- **Componentes reutilizáveis**, promovendo padronização e economia de esforço no desenvolvimento de novas funcionalidades.
+
+---
+
+## ✅ Testes
+
+Os testes são aplicados principalmente na camada de **Domain**, assegurando a consistência e confiabilidade da lógica de negócios da aplicação.
+
+---
+
+## ⚙️ CI/CD
+
+Atualmente, o processo de **CI/CD** está implementado apenas para **Android**, utilizando o **Fastlane** para:
+
+1. Análise de código.
+2. Execução de testes com relatório de cobertura.
+3. Build e empacotamento da versão de release.
+4. Controle de versão baseado na contagem de commits do Git.
+
+### Build Android com Fastlane
+Navegue até a pasta `android` e execute:
+```bash
+fastlane release
+```

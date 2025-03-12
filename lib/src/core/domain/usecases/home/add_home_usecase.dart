@@ -14,6 +14,7 @@ class AddHomeUseCase extends UseCase<AddHomeResult> {
 
   AddHomeUseCase(this.repository, this.name, this.address);
 
+  @override
   Future<AddHomeResult> call() async {
     try {
       return (home: await repository.addHome(name, address), failure: null);

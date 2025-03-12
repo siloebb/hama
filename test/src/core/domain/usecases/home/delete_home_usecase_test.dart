@@ -21,8 +21,8 @@ main(){
     
     when(() => repository.deleteHome('any_id')).thenThrow(Exception());
     
-    final future = useCase.call();
+    final future = await useCase.call();
     
-    expect(future, throwsA(TypeMatcher<Exception>()));
+    expect(future.failure, isNotNull);
   });
 }
